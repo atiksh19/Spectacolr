@@ -1,16 +1,16 @@
 import 'package:flutter/material.dart';
 
-class CameraPage extends StatelessWidget {
+class InfoPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
       child: Center(
         child: Text(
-          "Under Construction⚠️",
+          "Under Developement⚒️",
           style: TextStyle(
             color: Colors.white,
             fontSize: 30,
-          ),
+          ),          
         ),
       ),
       decoration: BoxDecoration(
