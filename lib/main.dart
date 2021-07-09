@@ -21,9 +21,27 @@ class _MyAppState extends State<MyApp> {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       home: Scaffold(
-        body: pgnm == 0 ? HomePage() : pgnm == 1 ? CameraPage() : InfoPage(),
+        body: GestureDetector(
+          onHorizontalDragUpdate: (details) {
+            int sensitivity = 16;
+            if (details.delta.dx > sensitivity && pgnm != 0) {
+              //left swipe
+              setState((){pgnm -= 1;});
+            }
+            else if(details.delta.dx < -sensitivity && pgnm != 2){
+              //right swipe
+              setState((){pgnm += 1;});
+            }
+          },
+          child: 
+            pgnm == 0
+            ? HomePage()
+            : pgnm == 1
+            ? CameraPage() 
+            : InfoPage(),
+        ),
         bottomNavigationBar: CurvedNavigationBar(
-          index: 1,
+          index: pgnm,
           animationCurve: Curves.decelerate,
           backgroundColor: Colors.indigo,
           buttonBackgroundColor: Colors.purple,
