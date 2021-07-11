@@ -1,10 +1,15 @@
-import 'package:spectacolr/pages/info.dart';
 import 'package:curved_navigation_bar/curved_navigation_bar.dart';
 import 'package:flutter/material.dart';
+import 'package:camera/camera.dart';
 import 'pages/home.dart';
 import 'pages/camera.dart';
+import 'pages/info.dart';
 
-void main() {
+List <CameraDescription> cameras = [];
+
+Future<void> main() async{
+  WidgetsFlutterBinding.ensureInitialized();
+  cameras = await availableCameras();
   runApp(MyApp());
 }
 
@@ -37,7 +42,7 @@ class _MyAppState extends State<MyApp> {
             pgnm == 0
             ? HomePage()
             : pgnm == 1
-            ? CameraPage() 
+            ? CameraPage(camera: cameras,) 
             : InfoPage(),
         ),
         bottomNavigationBar: CurvedNavigationBar(

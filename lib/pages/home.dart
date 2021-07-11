@@ -17,7 +17,7 @@ class HomePage extends StatelessWidget {
               "Spectacolr",
               style: TextStyle(
                 color: Colors.white,
-                fontSize: 50,
+                fontSize: 40,
               ),
             ),
           ),
@@ -49,7 +49,7 @@ class _ButtonState extends State<Button> {
   Widget build(BuildContext context) {
     return Column(
       children: [
-        CircleAvatar(backgroundImage: AssetImage(widget.img), radius: 80),
+        CircleAvatar(backgroundImage: AssetImage(widget.img), radius: 60),
         Text(widget.txt, style: TextStyle(fontSize: 30, fontWeight: FontWeight.bold),),
       ],
     );
