@@ -1,5 +1,8 @@
 import 'package:camera/camera.dart';
 import 'package:flutter/material.dart';
+import 'package:spectacolr/filters.dart';
+
+int f = 0;
 
 class CameraPage extends StatefulWidget {
   final List <CameraDescription> camera;
@@ -11,8 +14,9 @@ class CameraPage extends StatefulWidget {
 class _CameraPageState extends State<CameraPage> {
   CameraController contr = CameraController(CameraDescription(name: "", lensDirection: CameraLensDirection.front, sensorOrientation: 0), ResolutionPreset.medium);
   @override
-  void initState() {
+  void initState(){
     super.initState();
+    getf();
     contr = CameraController(widget.camera[0], ResolutionPreset.medium);
     contr.initialize().then((_) {
       if (!mounted) {
@@ -30,8 +34,16 @@ class _CameraPageState extends State<CameraPage> {
 
   @override
   Widget build(BuildContext context) {
-    return Container(
-      child: CameraPreview(contr),
+    return ColorFiltered(
+      colorFilter: filterz[f],
+      child: AspectRatio(
+        aspectRatio: 1/contr.value.aspectRatio,
+        child: CameraPreview(contr),
+      ),
     );
   }
+}
+
+void getf() async {
+  f = await getActive();
 }
