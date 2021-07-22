@@ -34,7 +34,7 @@ class HomePage extends StatelessWidget {
                     SizedBox(height: 20,),
                     Text(
                       "Spectacolr is designed to help colorblind people in distinguishing and maybe recognizing colors they usually don't. Our main priority is convenience, which us why we made the app as lightweight and east-to-use as possible.",
-                      style: TextStyle(fontSize: 35,),
+                      style: TextStyle(fontSize: 25,),
                     ),
                     SizedBox(height: 40,),
                     ClipRRect(
@@ -45,7 +45,7 @@ class HomePage extends StatelessWidget {
                     SizedBox(height: 20,),
                     Text(
                       "We are a team of 2 highschoolers from India, Atiksh Mittal and Arav Dhoot\n Atiksh Mittal: App Developer\n Arav Dhoot: Web developer",
-                      style: TextStyle(fontSize: 35),
+                      style: TextStyle(fontSize: 25),
                     ),
                     SizedBox(height: 40,),
                     ClipRRect(
@@ -56,7 +56,7 @@ class HomePage extends StatelessWidget {
                     SizedBox(height: 20,),
                     Text(
                       "If you have any inquiries, suggestions, or complaints, please contact us at:\natiksh1909@gmail.com\naravdhoot@gmail.com",
-                      style: TextStyle(fontSize: 35,),
+                      style: TextStyle(fontSize: 25,),
                     ),
                     SizedBox(height: 40,)
                   ],
