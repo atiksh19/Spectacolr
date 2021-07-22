@@ -6,21 +6,10 @@ setActive(int ac) async {
   prefs.setInt('active', ac);
 }
 
-setApply(bool ap) async {
-  SharedPreferences prefs = await SharedPreferences.getInstance();
-  prefs.setBool('apply', ap);
-}
-
 getActive() async{
   SharedPreferences prefs = await SharedPreferences.getInstance();
   int intValue = prefs.getInt('active') ?? 0;
   return intValue;
-}
-
-getApply() async {
-  SharedPreferences prefs = await SharedPreferences.getInstance();
-  bool boolValue = prefs.getBool('apply') ?? false;
-  return boolValue;
 }
 
 List <ColorFilter> filterz = [normal, protanomaly, protanopia,  deuteranomaly, deuteranopia, tritanomaly, tritanopia];

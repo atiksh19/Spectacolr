@@ -34,11 +34,15 @@ class _CameraPageState extends State<CameraPage> {
 
   @override
   Widget build(BuildContext context) {
-    return ColorFiltered(
-      colorFilter: filterz[f],
-      child: AspectRatio(
-        aspectRatio: 1/contr.value.aspectRatio,
-        child: CameraPreview(contr),
+    return Container(
+      alignment: Alignment.center,
+      color: Colors.indigo,
+      child: ColorFiltered(
+        colorFilter: filterz[f],
+        child: AspectRatio(
+          aspectRatio: 1/contr.value.aspectRatio,
+          child: CameraPreview(contr),
+        ),
       ),
     );
   }

@@ -3,7 +3,6 @@ import 'package:spectacolr/filters.dart';
 
 List <String> choose = ["normal", "protanomaly", "protanopia",  "deuteranomaly", "deuteranopia", "tritanomaly", "tritanopia"];
 int filterNo = 0;
-bool pageApply = false;
 
 class InfoPage extends StatefulWidget {
   @override
@@ -11,6 +10,11 @@ class InfoPage extends StatefulWidget {
 }
 
 class _InfoPageState extends State<InfoPage> {
+  @override
+  void initState() {
+    super.initState();
+    getData();
+  }
   @override
   Widget build(BuildContext context) {
     return Container(
@@ -29,6 +33,7 @@ class _InfoPageState extends State<InfoPage> {
               ),
               SizedBox(height: 20,),
               DropdownButton(
+                value: (filterNo != 0) ? choose[filterNo] : null,
                 style: TextStyle(
                   fontSize: 15,
                   fontWeight: FontWeight.bold,
@@ -44,13 +49,6 @@ class _InfoPageState extends State<InfoPage> {
                   filterNo = findnum(newfil);
                   setActive(filterNo);
                   setState(() {});
-                },
-              ),
-              SizedBox(height: 20,),
-              Switch(
-                value: pageApply,
-                onChanged: (val) {
-                  setApply(val);
                 },
               ),
             ],
@@ -73,11 +71,9 @@ int findnum(Object? name) {
   : (name == "tritanomaly") ? 5
   : (name == "tritanopia") ? 6
   : 7;
-  print(n.toString());
   return n;
 }
 
 void getData() async {
   filterNo = await getActive();
-  pageApply = await getApply();
 }
