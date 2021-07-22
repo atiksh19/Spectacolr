@@ -28,7 +28,7 @@ class HomePage extends StatelessWidget {
                     SizedBox(height: 40,),
                     ClipRRect(
                       borderRadius: BorderRadius.all(Radius.circular(10)),
-                      child: Container(decoration: BoxDecoration(color: Colors.indigoAccent), child: Text("Hello!!", style: TextStyle(fontSize: 50, fontWeight: FontWeight.bold),)
+                      child: Container(decoration: BoxDecoration(color: Colors.indigoAccent), child: Text("Hello!!", style: TextStyle(fontSize: 40, fontWeight: FontWeight.bold),)
                       ),
                     ),
                     SizedBox(height: 20,),
@@ -39,7 +39,7 @@ class HomePage extends StatelessWidget {
                     SizedBox(height: 40,),
                     ClipRRect(
                       borderRadius: BorderRadius.all(Radius.circular(10)),
-                      child: Container(decoration: BoxDecoration(color: Colors.indigoAccent), child: Text("About Us", style: TextStyle(fontSize: 45, fontWeight: FontWeight.bold),)
+                      child: Container(decoration: BoxDecoration(color: Colors.indigoAccent), child: Text("About Us", style: TextStyle(fontSize: 35, fontWeight: FontWeight.bold),)
                       ),
                     ),
                     SizedBox(height: 20,),
@@ -50,7 +50,7 @@ class HomePage extends StatelessWidget {
                     SizedBox(height: 40,),
                     ClipRRect(
                       borderRadius: BorderRadius.all(Radius.circular(10)),
-                      child: Container(decoration: BoxDecoration(color: Colors.indigoAccent), child: Text("Contact us", style: TextStyle(fontSize: 45, fontWeight: FontWeight.bold),)
+                      child: Container(decoration: BoxDecoration(color: Colors.indigoAccent), child: Text("Contact us", style: TextStyle(fontSize: 35, fontWeight: FontWeight.bold),)
                       ),
                     ),
                     SizedBox(height: 20,),
