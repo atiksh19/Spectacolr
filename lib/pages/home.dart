@@ -33,7 +33,7 @@ class HomePage extends StatelessWidget {
                     ),
                     SizedBox(height: 20,),
                     Text(
-                      "Spectacolr is designed to help colorblind people in distinguishing and maybe recognizing colors they usually don't. Our main priority is convenience, which us why we made the app as lightweight and east-to-use as possible.",
+                      "Spectacolr is designed to help colorblind people in distinguishing and maybe recognizing colors they usually don't. Our main priority is convenience, which is why we made the app as lightweight and east-to-use as possible.",
                       style: TextStyle(fontSize: 25,),
                     ),
                     SizedBox(height: 40,),
