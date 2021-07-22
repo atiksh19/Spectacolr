@@ -27,7 +27,7 @@ class _InfoPageState extends State<InfoPage> {
               Text(
                 "Change Color Filter",
                 style: TextStyle(
-                  fontSize: 25,
+                  fontSize: 50,
                   fontWeight: FontWeight.bold,
                 ),
               ),
@@ -35,10 +35,10 @@ class _InfoPageState extends State<InfoPage> {
               DropdownButton(
                 value: (filterNo != 0) ? choose[filterNo] : null,
                 style: TextStyle(
-                  fontSize: 15,
+                  fontSize: 25,
                   fontWeight: FontWeight.bold,
                 ),
-                hint: Text("choose type of colorblindness"),
+                hint: Text("choose type of colorblindness", style: TextStyle(fontSize: 25)),
                 items: choose.map((e) {
                   return DropdownMenuItem(
                     value: e,

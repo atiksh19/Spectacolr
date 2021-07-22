@@ -28,35 +28,35 @@ class HomePage extends StatelessWidget {
                     SizedBox(height: 40,),
                     ClipRRect(
                       borderRadius: BorderRadius.all(Radius.circular(10)),
-                      child: Container(decoration: BoxDecoration(color: Colors.indigoAccent), child: Text("Hello!!", style: TextStyle(fontSize: 30, fontWeight: FontWeight.bold),)
+                      child: Container(decoration: BoxDecoration(color: Colors.indigoAccent), child: Text("Hello!!", style: TextStyle(fontSize: 50, fontWeight: FontWeight.bold),)
                       ),
                     ),
                     SizedBox(height: 20,),
                     Text(
                       "Spectacolr is designed to help colorblind people in distinguishing and maybe recognizing colors they usually don't. Our main priority is convenience, which us why we made the app as lightweight and east-to-use as possible.",
-                      style: TextStyle(fontSize: 20,),
+                      style: TextStyle(fontSize: 35,),
                     ),
                     SizedBox(height: 40,),
                     ClipRRect(
                       borderRadius: BorderRadius.all(Radius.circular(10)),
-                      child: Container(decoration: BoxDecoration(color: Colors.indigoAccent), child: Text("About Us", style: TextStyle(fontSize: 25, fontWeight: FontWeight.bold),)
+                      child: Container(decoration: BoxDecoration(color: Colors.indigoAccent), child: Text("About Us", style: TextStyle(fontSize: 45, fontWeight: FontWeight.bold),)
                       ),
                     ),
                     SizedBox(height: 20,),
                     Text(
                       "We are a team of 2 highschoolers from India, Atiksh Mittal and Arav Dhoot\n Atiksh Mittal: App Developer\n Arav Dhoot: Web developer",
-                      style: TextStyle(fontSize: 20,),
+                      style: TextStyle(fontSize: 35),
                     ),
                     SizedBox(height: 40,),
                     ClipRRect(
                       borderRadius: BorderRadius.all(Radius.circular(10)),
-                      child: Container(decoration: BoxDecoration(color: Colors.indigoAccent), child: Text("Contact us", style: TextStyle(fontSize: 25, fontWeight: FontWeight.bold),)
+                      child: Container(decoration: BoxDecoration(color: Colors.indigoAccent), child: Text("Contact us", style: TextStyle(fontSize: 45, fontWeight: FontWeight.bold),)
                       ),
                     ),
                     SizedBox(height: 20,),
                     Text(
                       "If you have any inquiries, suggestions, or complaints, please contact us at:\natiksh1909@gmail.com\naravdhoot@gmail.com",
-                      style: TextStyle(fontSize: 20,),
+                      style: TextStyle(fontSize: 35,),
                     ),
                     SizedBox(height: 40,)
                   ],
